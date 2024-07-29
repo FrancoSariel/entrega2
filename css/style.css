@@ -61,6 +61,7 @@ section div a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
+    flex-wrap: wrap;
 
 }
 /*estilo footer*/
