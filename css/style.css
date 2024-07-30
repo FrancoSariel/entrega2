@@ -53,6 +53,7 @@ header nav ul li a:hover {
 
 /*estilo grid*/
 section {
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -69,9 +70,8 @@ section div a {
 
 .grid-conteiner {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /*estilo footer*/
