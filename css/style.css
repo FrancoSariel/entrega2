@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    list-style:none
+    list-style: none
 }
 
 body {
     background-color: #ffffff;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /*estilo para el header*/
@@ -14,6 +19,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    flex-wrap: wrap;
 }
 
 header img {
@@ -38,39 +44,50 @@ header nav ul li a {
     font-size: 30px;
     transition: 1s;
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     color: blue;
     font-size: 35px;
 }
 
 
 /*estilo grid*/
-section{
-    font-family: Arial, Helvetica, sans-serif;    
+section {
+    font-family: Arial, Helvetica, sans-serif;
 }
-section div h5{
+
+section div h5 {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: solid;
     text-align: left;
 }
-section div a{
+
+section div a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-.grid-conteiner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    flex-wrap: wrap;
 
+.grid-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 /*estilo footer*/
-footer{
+footer {
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
-    padding: 40px;
     text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-right: auto;
 }
-footer div ul li a{
+
+footer div ul li a {
     text-decoration: none;
 }
